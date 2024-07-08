@@ -10,12 +10,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const mongoURI = process.env.MONGO_URL;
 
-const corsOptions = {
-  origin: 'https://flight-website-frontend.vercel.app',
-  optionsSuccessStatus: 200,
-};
+// const corsOptions = {
+//   origin: 'https://flight-website-frontend.vercel.app',
+//   optionsSuccessStatus: 200,
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(mongoURI, {
