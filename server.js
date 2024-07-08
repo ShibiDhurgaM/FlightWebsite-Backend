@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 const mongoURI = process.env.MONGO_URL;
 
 const corsOptions = {
-  origin: 'https://flight-website-frontend.vercel.app/',
+  origin: 'https://flight-website-frontend.vercel.app',
   optionsSuccessStatus: 200,
 };
 
